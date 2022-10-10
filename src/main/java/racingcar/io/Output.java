@@ -19,4 +19,8 @@ public class Output {
     public static void error(final Object message) {
         System.out.println(String.format(ERROR_MESSAGE_PATTERN, message));
     }
+
+    public static void line() {
+        System.out.println();
+    }
 }

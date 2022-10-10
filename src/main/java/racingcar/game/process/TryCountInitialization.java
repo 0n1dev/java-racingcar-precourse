@@ -16,7 +16,7 @@ public class TryCountInitialization implements GameProcess {
         String inputTryCount = Input.readLine();
         int tryCount = stringToInteger(inputTryCount);
 
-        return new GameStatus(new TryCountInitialization(), gameStatus.getCars(), tryCount);
+        return new GameStatus(new TryToMoveProcess(), gameStatus.getCars(), tryCount);
     }
 
     private int stringToInteger(final String inputTryCount) {
