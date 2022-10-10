@@ -8,14 +8,18 @@ public class Cars {
 
     private final List<Car> cars;
 
-    public Cars() {
+    private Cars() {
         this.cars = new ArrayList<>();
     }
 
-    public void addCars(final List<String> names, final Move move) {
+    public static Cars of(final String[] names, final Move move) {
+        Cars cars = new Cars();
+
         for (String name : names) {
-            this.cars.add(new Car(name, move));
+            cars.cars.add(new Car(name, move));
         }
+
+        return cars;
     }
 
     public void move() {
