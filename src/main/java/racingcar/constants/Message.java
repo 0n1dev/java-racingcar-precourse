@@ -10,6 +10,7 @@ public class Message {
     public static final String INIT_TRY_COUNT_MESSAGE = "시도할 횟수는 몇회인가요?";
     public static final String TRY_TO_MOVE_HEAD_MESSAGE = "실행 결과";
     public static final String TRY_TO_MOVE_RESULT_PATTERN = "%s : %s";
+    public static final String WINNERS_RESULT_PATTERN = "최종 우승자 : %s";
 
     private Message() {
     }

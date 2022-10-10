@@ -22,7 +22,7 @@ public class TryToMoveProcess implements GameProcess {
             outputCar(gameStatus);
         }
 
-        return new GameStatus(null, gameStatus.getCars(), gameStatus.getTryCount());
+        return new GameStatus(new WinnersProcess(), gameStatus.getCars(), gameStatus.getTryCount());
     }
 
     private void outputCar(GameStatus gameStatus) {
