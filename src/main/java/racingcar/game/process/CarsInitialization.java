@@ -18,6 +18,6 @@ public class CarsInitialization implements GameProcess {
         String[] names = inputNames.split(",");
         Cars cars = Cars.of(names, new RandomMove());
 
-        return new GameStatus(new CarsInitialization(), cars);
+        return new GameStatus(new TryCountInitialization(), cars, 0);
     }
 }

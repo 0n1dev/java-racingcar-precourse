@@ -9,7 +9,7 @@ public class GameContext {
     private GameStatus gameStatus;
 
     public void start() {
-        this.gameStatus = new GameStatus(new CarsInitialization(), null);
+        this.gameStatus = new GameStatus(new CarsInitialization(), null, 0);
 
         while (this.gameStatus.getGameProcess() != null) {
             execute();
