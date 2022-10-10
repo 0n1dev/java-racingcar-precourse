@@ -20,7 +20,7 @@ public class TryCountInitialization implements GameProcess {
     }
 
     private int stringToInteger(final String inputTryCount) {
-        int tryCount = 0;
+        int tryCount;
 
         try {
             tryCount = Integer.parseInt(inputTryCount);
